@@ -5,11 +5,12 @@ A workshop designed around the Projector component type.
 
 A projector has an ingress of events and persists state externally. 
 
-| Input/Output | Commands                    | Events                        | External       |
-|--------------|-----------------------------|-------------------------------|----------------|
-| Commands     | Controller (Translator/ACL) | Aggregator (Aggregate)        | Actuator       |
-| Events       | Process Manager             | Event System (Translator/ACL) | **Projector** (Projection)     |
-| External     | Actor                       | Sensor                        | Plant (System) |
+## Component Types
+| Input/Output | Events                 | Commands                      | External                      |
+|--------------|------------------------|-------------------------------|-------------------------------|
+| Events       | Translator (ACL)       | Process Manager               | **Projector** (Projection)    |
+| Commands     | Aggregator (Aggregate) | Controller (Translator/ACL)   | Actuator                      |
+| External     | Sensor                 | Actor                         | System                        |
 
 ## Prerequisites
 - .NET
